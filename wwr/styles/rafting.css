@@ -1,20 +1,56 @@
 :root{
-  --primary-color:#FFFB00;
+  --primary-color:#fffc47;
   --secondary-color: #0A7AFA;
-  --accent1-color:#FFC66F;
+  --accent1-color:#db890e;
   --accent2-color: #C7C7C7;
   --heading-font: "Overpass", serif;
   --text-font: "Karla", serif;
 }
 
+.pages {
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: center; 
+  gap: 20px;
+  background-color: var(--primary-color);
+}
+
+.pages nav {
+  display: flex;
+  gap: 10px;
+  font-size: 18px;
+}
+
+.pages nav a {
+  font-size: 22px;
+  margin-right: 100px;
+}
+
 h1 {
   font-family: var(--heading-font);
   font-weight: 900;
-  font-style: normal;
+  font-style: italic;
+  color: var(--primary-color);
+  position: absolute;
+  top: 28%;
+  left: 45%;
+  font-size: 40px;
+}
+
+h2 {
+  font-family: var(--heading-font);
+  font-weight: 600;
 }
 
 article img {
-  float: right;
+  position: absolute;
+  top: 230px;
+  right: 199px;
+  bottom: 5px;
+  left: 970px;
+  width: 250px;
+  height: auto;
+  border: 2px solid black;
 }
 
 .hero img {
@@ -24,14 +60,89 @@ article img {
   
 }
 
+.flex-container {
+  text-align: center;
+}
+
+.flex-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+
+}
+
+.flex-img {
+  width: 250px;
+  height: auto;
+}
+
 p {
   font-family: var(--text-font);
   font-weight: 400;
   font-style: normal;
+  text-align: justify;
+}
+
+.hero p {
+  font-family: var(--text-font);
+  font-weight: 400;
+  font-style: italic;
+  color:white;
+  padding: 10px;
+  position: absolute;
+  top: 45%;
+  left: 10%;
+  right: 30%;
+  background-color: rgba(173, 168, 196, 0.5);
+  padding: 10px;
+  padding-left: 80;
+  padding-right: 80;
+}
+
+
+figure {
+  border: thin #c0c0c0 solid;
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  max-width: 220px;
+  margin: auto;
+}
+
+figcaption {
+  background-color: #222;
+  color: #fff;
+  font: italic smaller sans-serif;
+  padding: 3px;
+   
+}
+
+.adventure-img {
+  display: flex;
+  flex-direction: row;
+}
+
+.adventure{
+  flex-grow: 1;
+  max-width: 220px;
+  max-height: 150px;
+}
+
+footer {
+  display: flex;
+  justify-content: right;
+  padding: 25px;
+
+  gap: 30%;
+  background-color: var(--primary-color);
+}
+
+.socialmedia a {
+  text-decoration: none;
 }
 
 .socialmedia img {
-  text-decoration: none;
-  width: 50px;
-  height: 50px;
+  width: 35px;
+  height: 35px;
 }
