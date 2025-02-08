@@ -1,8 +1,8 @@
 :root{
   --primary-color:#fffc47;
   --secondary-color: #0769da;
-  --accent1-color:#db890e;
-  --accent2-color: #C7C7C7;
+  --accent1-color:#db8e19;
+  --accent2-color: #e0ddff;
   --heading-font: "Overpass", serif;
   --text-font: "Karla", serif;
 }
@@ -22,8 +22,26 @@
 }
 
 .pages nav a {
+  display: flex;
+  justify-content: center;
   font-size: 22px;
   margin-right: 100px;
+  text-decoration: none;
+  background-color:var(--accent2-color);
+  width: 130px;
+  padding: 5px;
+  border: 1px solid black;
+}
+
+.pages img{
+  padding-left: 5%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+a {
+  font-family: var(--text-font);
+  font-weight: 600;
 }
 
 body {
@@ -98,7 +116,7 @@ article img {
   height: auto;
 }
 
-p {
+p, label {
   font-family: var(--text-font);
   font-weight: 400;
   font-style: normal;
@@ -155,6 +173,34 @@ footer {
   padding: 25px;
   gap: 30%;
   background-color: var(--primary-color);
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+}
+
+.box {
+  background-color: var(--accent1-color);
+  border: 1px solid black;
+  padding: 20px;
+}
+
+#button {
+  font-family: var(--text-font);
+  background-color: var(--secondary-color);
+  font-weight: 600px;
+  font-size: 15px;
+  color: white;
+  width: 100px;
+  height: auto;
+  padding: 5px;
+}
+
+footer {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
 }
 
 footer p {
