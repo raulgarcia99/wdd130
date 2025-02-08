@@ -186,7 +186,7 @@ footer {
   padding: 20px;
 }
 
-#button {
+.button {
   font-family: var(--text-font);
   background-color: var(--secondary-color);
   font-weight: 600px;
