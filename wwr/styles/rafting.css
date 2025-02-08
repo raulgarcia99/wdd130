@@ -1,6 +1,6 @@
 :root{
   --primary-color:#fffc47;
-  --secondary-color: #0A7AFA;
+  --secondary-color: #0769da;
   --accent1-color:#db890e;
   --accent2-color: #C7C7C7;
   --heading-font: "Overpass", serif;
@@ -26,20 +26,40 @@
   margin-right: 100px;
 }
 
+body {
+  background-color: var(--secondary-color);
+}
+
 h1 {
   font-family: var(--heading-font);
-  font-weight: 900;
-  font-style: italic;
   color: var(--primary-color);
+  font-style: italic;
+  font-weight: 900;
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+}
+
+.hero h1 {
   position: absolute;
   top: 28%;
   left: 45%;
-  font-size: 40px;
 }
+
+.hero2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 
 h2 {
   font-family: var(--heading-font);
   font-weight: 600;
+  color: var(--primary-color);
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
 }
 
 article img {
@@ -52,6 +72,7 @@ article img {
   height: auto;
   border: 2px solid black;
 }
+
 
 .hero img {
   display: block;
@@ -82,13 +103,12 @@ p {
   font-weight: 400;
   font-style: normal;
   text-align: justify;
+  color: white;
 }
 
 .hero p {
-  font-family: var(--text-font);
   font-weight: 400;
   font-style: italic;
-  color:white;
   padding: 10px;
   position: absolute;
   top: 45%;
@@ -125,17 +145,20 @@ figcaption {
 
 .adventure{
   flex-grow: 1;
-  max-width: 220px;
-  max-height: 150px;
+  max-width: auto;
+  max-height: 220px;
 }
 
 footer {
   display: flex;
   justify-content: right;
   padding: 25px;
-
   gap: 30%;
   background-color: var(--primary-color);
+}
+
+footer p {
+color: black;
 }
 
 .socialmedia a {
