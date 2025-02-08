@@ -145,8 +145,8 @@ figcaption {
 
 .adventure{
   flex-grow: 1;
-  max-width: auto;
-  max-height: 220px;
+  width: auto;
+  height: 220px;
 }
 
 footer {
