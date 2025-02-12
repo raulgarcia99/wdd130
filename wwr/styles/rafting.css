@@ -64,9 +64,11 @@ footer {
   margin-top: 10px;
   display: flex;
   align-items: center;
+  justify-content: end;
   background-color: var(--primary-color);
   padding: 25px;
   gap: 30%;
+
 }
 
 footer p {
@@ -151,6 +153,7 @@ article img {
 .contact{
   display: flex;
   flex-direction: column;
+  align-items: center;
   max-width: 25%;
   height: auto;
 }
@@ -197,7 +200,7 @@ article img {
   font-family: var(--text-font);
   background-color: var(--secondary-color);
   font-weight: 600;
-  font-size: 15px;
+  font-size: 18px;
   color: white;
   width: auto;
   height: auto;
