@@ -7,6 +7,83 @@
   --text-font: "Karla", serif;
 }
 
+body {
+  background-color: var(--secondary-color);
+}
+
+a {
+  font-family: var(--text-font);
+  font-weight: 600;
+}
+
+h1 {
+  font-family: var(--heading-font);
+  color: var(--primary-color);
+  font-style: italic;
+  font-weight: 900;
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+}
+
+h2 {
+  font-family: var(--heading-font);
+  font-weight: 600;
+  color: var(--primary-color);
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+p, label {
+  font-family: var(--text-font);
+  font-weight: 400;
+  font-style: normal;
+  text-align: justify;
+  color: white;
+}
+
+figure {
+  border: thin #c0c0c0 solid;
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  max-width: 220px;
+  margin: auto;
+}
+
+figcaption {
+  background-color: #222;
+  color: #fff;
+  font: italic smaller sans-serif;
+  padding: 3px;
+   
+}
+
+footer {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  background-color: var(--primary-color);
+  padding: 25px;
+  gap: 30%;
+}
+
+footer p {
+  color: black;
+}
+
+article img {
+  position: absolute;
+  top: 230px;
+  right: 199px;
+  bottom: 5px;
+  left: 970px;
+  width: 250px;
+  height: auto;
+  border: 2px solid black;
+}
+
 .pages {
   display: grid;
   grid-template-columns: auto auto;
@@ -39,89 +116,16 @@
   padding-bottom: 5%;
 }
 
-a {
-  font-family: var(--text-font);
-  font-weight: 600;
-}
-
-body {
-  background-color: var(--secondary-color);
-}
-
-h1 {
-  font-family: var(--heading-font);
-  color: var(--primary-color);
-  font-style: italic;
-  font-weight: 900;
-  display: flex;
-  justify-content: center;
-  font-size: 40px;
-}
-
 .hero h1 {
   position: absolute;
   top: 28%;
   left: 45%;
 }
 
-.hero2 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-
-h2 {
-  font-family: var(--heading-font);
-  font-weight: 600;
-  color: var(--primary-color);
-  font-size: 30px;
-  display: flex;
-  justify-content: center;
-}
-
-article img {
-  position: absolute;
-  top: 230px;
-  right: 199px;
-  bottom: 5px;
-  left: 970px;
-  width: 250px;
-  height: auto;
-  border: 2px solid black;
-}
-
-
 .hero img {
   display: block;
   width: 100%;
   height: auto;
-  
-}
-
-.flex-container {
-  text-align: center;
-}
-
-.flex-content {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 20px;
-
-}
-
-.flex-img {
-  width: 250px;
-  height: auto;
-}
-
-p, label {
-  font-family: var(--text-font);
-  font-weight: 400;
-  font-style: normal;
-  text-align: justify;
-  color: white;
 }
 
 .hero p {
@@ -138,22 +142,33 @@ p, label {
   padding-right: 80px;
 }
 
-
-figure {
-  border: thin #c0c0c0 solid;
+.hero2 {
   display: flex;
   flex-direction: column;
-  padding: 5px;
-  max-width: 220px;
-  margin: auto;
+  align-items: center;
 }
 
-figcaption {
-  background-color: #222;
-  color: #fff;
-  font: italic smaller sans-serif;
-  padding: 3px;
-   
+.contact{
+  display: flex;
+  flex-direction: column;
+  max-width: 25%;
+  height: auto;
+}
+
+.flex-container {
+  text-align: center;
+}
+
+.flex-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.flex-img {
+  width: 250px;
+  height: auto;
 }
 
 .adventure-img {
@@ -165,14 +180,6 @@ figcaption {
   flex-grow: 1;
   width: auto;
   height: 220px;
-}
-
-footer {
-  display: flex;
-  justify-content: right;
-  padding: 25px;
-  gap: 30%;
-  background-color: var(--primary-color);
 }
 
 .form {
@@ -195,16 +202,6 @@ footer {
   width: auto;
   height: auto;
   padding: 5px;
-}
-
-footer {
-  margin-top: 10px;
-  display: flex;
-  align-items: center;
-}
-
-footer p {
-color: black;
 }
 
 .socialmedia a {
