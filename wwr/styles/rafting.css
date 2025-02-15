@@ -147,10 +147,43 @@ article img {
   border: 1px solid black;
 }
 
+.pages nav a:link {
+  color: blue;
+}
+
+.pages nav a:visited {
+  color: blue;
+}
+
 .pages img{
   padding-left: 5%;
   padding-top: 5%;
   padding-bottom: 5%;
+}
+
+.index_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.item {
+  background-color: var(--accent1-color);
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.item img {
+  max-width: 70%;
+  height: auto;
+}
+
+#go-trips {
+  font-size: 18px;
+  padding: 15px;
 }
 
 .hero h1 {
